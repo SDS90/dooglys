@@ -1,0 +1,125 @@
+//Безопасно
+
+.safety-wrapper{
+	width: 100%;
+	min-width: 1420px;
+	min-height: 900px;
+	background-color: transparent;
+	padding: 145px 10px 100px 10px;
+	overflow: hidden;
+
+	.safety-section{
+		position: relative;
+		width: 900px;
+		margin: 0px auto;
+	}
+
+	.sharks-bg,
+	.sharks,
+	.sharks-overlay,
+	.cable{
+		position: absolute !important;
+	}
+
+	.sharks-wrapper{
+		position: relative !important;
+	}
+
+	.sharks-bg{
+		top: 83px; left: 593px;
+		z-index: 8;
+	}
+
+	.sharks{
+		top: 93px;
+    	left: 650px;
+    	z-index: 9;
+	}
+
+	.sharks-overlay{
+		top: 19px;
+    	left: -68px;
+		z-index: 10;
+	}
+
+	.left-block{
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		width: 510px;
+		position: relative !important;
+		z-index: 123;
+	}
+
+	.subheader{
+		font-size: 30px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 5px;
+	}
+
+	.section-header{
+		font-size: 48px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 28px;
+	}
+
+	.textblock{
+		margin-bottom: 95px;
+
+		p{
+			margin-bottom: 24px;
+		}
+	}
+
+	.rotator{
+		-webkit-animation: rotator 5s infinite linear;
+		-webkit-moz: rotator 5s infinite linear;
+		-webkit-o: rotator 5s infinite linear;
+		-webkit-ms: rotator 5s infinite linear;
+		animation: rotator 5s infinite linear;
+	}
+
+
+	@-webkit-keyframes rotator{
+		0%{
+		-webkit-transform:rotate(0deg)}
+
+		100%{
+		-webkit-transform:rotate(-360deg)}
+	}
+
+	@-moz-keyframes rotator{
+		0%{
+		-moz-transform:rotate(0deg)}
+
+		100%{
+		-moz-transform:rotate(-360deg)}
+	}
+
+	@-o-keyframes rotator{
+		0%{
+		-o-transform:rotate(0deg)}
+
+		100%{
+		-o-transform:rotate(-360deg)}
+	}
+
+	@-ms-keyframes rotator{
+		0%{
+		-ms-transform:rotate(0deg)}
+
+		100%{
+		-ms-transform:rotate(-360deg)}
+	}
+
+	@keyframes rotator{
+		0%{
+		transform:rotate(0deg)}
+
+		100%{
+		transform:rotate(-360deg)}
+	}
+
+}

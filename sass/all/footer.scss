@@ -1,0 +1,106 @@
+//Подвальчик
+
+.footer-wrapper{
+	position: absolute;
+	bottom: -240px;
+	width: 100%;
+	min-width: 1420px;
+	background-color: #1fa3bf;
+	background-image: -webkit-linear-gradient(left, #4f6ebb 0%, #08b4b9 100%);
+    background-image: -moz-linear-gradient(left, #4f6ebb 0%, #08b4b9 100%);
+    background-image: -o-linear-gradient(left, #4f6ebb 0%, #08b4b9 100%);
+    background-image: -ms-linear-gradient(left, #4f6ebb 0%, #08b4b9 100%);
+    background-image: linear-gradient(left, #4f6ebb 0%, #08b4b9 100%);
+	padding: 60px 10px 140px 10px;
+
+	footer{
+		width: 1240px;
+		margin: 0px auto;
+		color: #fff;
+		font-size: 16px;
+		line-height: 24px;
+
+		a{
+			color: #fff;
+			&:hover{
+				border-color: transparent !important;
+			}
+		}
+
+		.inline{
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		.contacts-wrapper{
+			float: left;
+			margin-right: 162px;
+
+			.phone{
+				font-size: 36px;
+				margin-bottom: 23px;
+			}
+
+			.textblock{
+				color: #fff;
+			}
+		}
+
+		.footer-menu{
+			float: left;
+			margin: -3px 135px 0px 0px;
+
+			li{
+				display: block;
+			}
+
+			a{
+				text-decoration: none;
+				border-bottom: 1px dashed #fff;
+			}
+		}
+
+		.footer-address{
+			float: left;
+			margin-top: -3px;
+
+			a{
+				text-decoration: none;
+				border-bottom: 1px solid #c6eaef;
+			}
+
+			.mail-link{
+				text-decoration: none;
+				border-color: transparent;
+			}
+		}
+
+		.partners{
+			float: right;
+			margin-top: -3px;
+			
+			img{
+				display: block;
+				margin: 12px 0px;
+			}
+		}
+
+		.copyright{
+			color: #fff;
+			opacity: 0.5;
+			padding-top: 25px;
+			text-align: right;
+
+			span{
+				display: inline-block;
+				vertical-align: top;
+			}
+
+			.right{
+				margin-left: 385px;
+			}
+
+		}
+	}
+
+}

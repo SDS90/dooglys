@@ -1,0 +1,270 @@
+//Variables
+
+
+$pageWidth: 1400px; //Ширина страницы
+$pagePadding: 0px; //Отступы по сторонам
+
+$blue: #009fe9; 
+$white: #fff;
+$textColor: #282828;
+
+
+//Шрифты
+
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext);
+
+@font-face	{
+	font-family: 'Neris';
+	src: url('../fonts/Neris-Light.eot');
+	src: url('../fonts/Neris-Light.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Neris-Light.woff') format('woff'),
+		 url('../fonts/Neris-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face	{
+	font-family: 'Neris';
+	src: url('../fonts/Neris-LightItalic.eot');
+	src: url('../fonts/Neris-LightItalic.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Neris-LightItalic.woff') format('woff'),
+		 url('../fonts/Neris-LightItalic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face	{
+	font-family: 'Neris';
+	src: url('../fonts/Neris-SemiBold.eot');
+	src: url('../fonts/Neris-SemiBold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/Neris-SemiBold.woff') format('woff'),
+		 url('../fonts/Neris-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+/*
+@font-face	{
+	font-family: 'MyriadPro';
+	src: url('../fonts/MyriadPro-Bold.eot');
+	src: url('../fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/MyriadPro-Bold.woff') format('woff'),
+		 url('../fonts/MyriadPro-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+*/
+//Общие элементы (кроме reset)
+
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	min-height: 100%;
+	background-color: #fff;
+	font-family: 'Neris', sans-serif;
+	 /*font-size: 0px;Ставим на фон - для использования inline-блоков*/
+
+	 &.scroll-block{
+	 	overflow: hidden;
+	 }
+}
+b,strong{
+	font-weight: bold;
+}
+.font_bolder{
+	font-weight: 600;
+}
+.center{
+	text-align: center;
+}
+i,em{
+	font-style: italic;
+}
+html * {
+	max-height:1000000px;
+}
+.clearfix{
+	clear: both;
+}
+.clear:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+input::-webkit-input-placeholder {
+	font-family: 'Neris', sans-serif;
+	font-size: 16px;
+	color: #545454;
+}
+input::-moz-placeholder {
+	font-family: 'Neris', sans-serif;
+	font-size: 16px;
+	color: #545454;
+} 
+input::placeholder {
+	font-family: 'Neris', sans-serif;
+	font-size: 16px;
+	color: #545454;
+}
+
+a{
+	color: #08bcc1;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+.full-page{
+	width: 100%;
+	min-height: 100%;
+	min-width: 1400px;
+}
+
+//Стили для текста
+@mixin textStyles{
+	p, ul,ol{
+		margin-bottom: 25px;
+
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+
+	li{
+		margin-left: 17px;
+	}
+
+	ul>li{
+		list-style-type: disc;
+	}
+	ol>li{
+		list-style-type: decimal;
+	}
+}
+
+.textblock{
+	font-family: 'Neris', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #545454;
+	@include textStyles;
+
+
+	img{
+		max-width: 100%;
+	}
+
+	h2,
+	.h2{
+		font-size: 30px;
+		line-height: 34px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	h3,h4,h5,h6,
+	.h3,.h4,.h5,.h6{
+		padding-top: 20px;
+		margin-bottom: 20px;
+		font-size: 24px;
+		line-height: 28px;
+		font-weight: 600;
+	}
+}
+
+.textblock .blockquote,
+.textblock blockquote,
+blockquote.textblock{
+	font-size: 16px;
+	border-left: 2px solid #171515;
+	padding: 10px 10px 14px 20px;
+	margin-top: 32px;
+	font-weight: bold;
+}
+
+.-dn-{
+	display: none;
+}
+
+.relative{
+	position: relative;
+}
+
+.button{
+	display: inline-block;
+	height: 50px;
+	background-color: #08bcc1;
+	padding: 0px 28px;
+	font-size: 16px;
+	line-height: 43px;
+	font-weight: 600;
+	border: 2px solid #08bcc1;
+	border-radius: 5px;
+	color: #fff;
+	outline: none;
+	text-decoration: none;
+
+	&:hover{
+		background-color: #FFF;
+		color: #08bcc1;
+	}
+}
+
+.start-popup{
+	width: 820px;
+	padding: 140px 100px 100px 100px;
+
+	a{
+		display: inline-block;
+		vertical-align: top;
+		min-width: 122px;
+		margin: 0px 0px 45px 30px; 
+		text-align: center;
+		font-size: 14px;
+		color: #2e2e2e;
+		text-decoration: none;
+
+		&:first-child{
+			margin-left: 0px;
+		}
+
+		&:hover{
+			color: #08bcc1; 
+			span{
+				border: 3px solid #08bcc1;
+				background-position: -2px -87px;
+			}
+		}
+
+		&.own{
+			span{
+				background-position: center center;
+				background-color: #575757;
+			}
+
+			&:hover{
+				span{background-color: #08bcc1;}
+			}
+		}
+
+		span{
+			display: block;
+			width: 85px;
+			margin: 0px auto;
+			height: 85px;
+			border-radius: 50%;
+			border: 1px solid #575757;
+			text-align: center;
+			background-position: 0px 0px;
+			background-repeat: no-repeat;
+			margin-bottom: 19px;
+		}
+	}
+}

@@ -1,0 +1,64 @@
+//Совместимо
+
+.compatibility-wrapper{
+	width: 100%;
+	min-width: 1420px;
+	min-height: 1024px;
+	background-color: transparent;
+	padding: 0px 10px 100px 10px;
+	overflow: hidden;
+	//background-image: url(../img/compatibility/out.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	.compatibility-section{
+		position: relative;
+		width: 1170px;
+		margin: 0px auto;
+		padding-top: 135px;
+	}
+
+	.compatibility-port{
+		position: absolute !important;
+	}
+
+	.out-in{
+		position: absolute !important;
+		width: 272px;
+		height: 272px;
+		top: 355px; left: 440px;
+		z-index: 1000;
+	}
+
+	.right-block{
+		display: inline-block;
+		vertical-align: top;
+		float: right;
+		width: 510px;
+		position: relative !important;
+		z-index: 100;
+		padding-top: 10px;
+	}
+
+	.subheader{
+		font-size: 30px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 5px;
+	}
+
+	.section-header{
+		font-size: 48px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 15px;
+	}
+
+	.textblock{
+		margin-bottom: 95px;
+
+		p{
+			margin-bottom: 24px;
+		}
+	}
+}

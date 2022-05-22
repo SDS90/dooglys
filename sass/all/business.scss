@@ -1,0 +1,80 @@
+//Бизнес (второй блок)
+
+.business-wrapper{
+	width: 100%;
+	min-width: 1420px;
+	min-height: 960px;
+	background-color: transparent;
+	padding: 108px 10px 100px 10px;
+	overflow: hidden;
+
+	.business-section{
+		width: 1400px;
+		margin: 0px auto;
+		padding-left: 250px;
+	}
+
+	.section-header{
+		position: relative !important;
+		font-size: 30px;
+		line-height: 36px;
+		color: #2e2e2e;
+		width: 780px;
+		z-index: 200;
+		margin-top: 50px;
+	}
+
+	.business-process{
+		position: relative;
+		margin-top: 100px;
+
+		.business-block{
+			position: absolute !important;
+		}
+
+		.doodles-wrapper{
+			width: 815px;
+			position: absolute !important;
+			left: 105px;
+			top: 53px;
+
+			.doodles-shadow{
+				position: absolute;
+				width: 1043px;
+				height: 23px;
+				left: -150px;
+				top: 453px;
+				background-image: url(../img/business/doodles-shadow.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+			}
+
+			.doodle{
+				display: inline-block;
+				vertical-align: top;
+				position: absolute;
+				top: 0px;
+				padding: 300px 0px 0px 50px;
+				width: 282px;
+
+				&:hover .doodle-image{
+					top: -30px;
+				}
+			}
+
+			.doodle-image{
+				position: absolute;
+				top:0px; left: 0px;
+				-webkit-transition: all 0.4s ease 0s;
+			    -moz-transition: all 0.4s ease 0s;
+			    -o-transition: all 0.4s ease 0s;
+			    -ms-transition: all 0.4s ease 0s;
+			    transition: all 0.4s ease 0s;
+			}
+
+			.doodle-text{
+				position: relative;
+			}
+		}
+	}
+}

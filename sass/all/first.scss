@@ -1,0 +1,113 @@
+//Первый
+
+.first-wrapper{
+	width: 100%;
+	min-width: 1240px;
+	min-height: 750px;
+	background-color: transparent;
+	padding: 0px 10px 100px 10px;
+
+	.first-block{
+		position: relative;
+		width: 1400px;
+		margin: 0px auto;
+	}
+
+	.first-about{
+		position: relative !important;
+		z-index: 10;
+		width: 420px;
+		margin: 152px 0px 0px 250px;
+
+		li{
+			position: relative;
+			width: 50%;
+			float: left;
+			font-size: 16px;
+			line-height: 18px;
+			color: #545454;
+			padding-right: 33px;
+			margin-bottom: 20px;
+
+			&:before{
+				content:"";
+				position: absolute;
+				left: -20px; top: 7px;
+				width: 7px; height: 7px;
+				background-image: url(../img/icons/li-icon.png);
+				background-position: center center;
+				background-repeat: no-repeat;
+			}
+		}
+
+		.textblock{
+			margin-top: 22px;
+		}
+	}
+
+	.header-block{
+		font-size: 48px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 37px;
+	}
+
+	.dooglys-start,
+	.dooglys-finish,
+	.dooglys-hover{
+		position: absolute !important;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.dooglys-start,
+	.dooglys-hover{
+		width: 582px;
+		height: 551px;
+		left: 743px; top: 0px;
+	}
+
+	.dooglys-start{
+		background-image: url(../img/first/doodlys-start.png);
+	}
+
+	.dooglys-hover{
+		z-index: 90;
+	}
+
+	.dooglys-finish{
+		width: 409px;
+		height: 379px;
+		left: 832px; top: 85px;
+		background-image: url(../img/first/doodlys-finish.png);
+	}
+
+	.dooglys-button{
+		display: block;
+		width: 138px;
+		height: 125px;
+		position: absolute !important;
+		left: 215px;
+    	top: 220px;
+		z-index: 10;
+		font-size: 16px;
+		line-height: 18px;
+		color:#545454;
+		cursor: pointer;
+		padding-top: 100px;
+
+		span{
+			border-bottom: 1px dashed #545454;
+		}
+
+		&:hover{
+			span{border-color: transparent;}
+		}
+	}
+
+	.people{
+		position: absolute !important;
+		z-index: 8;
+	}
+}

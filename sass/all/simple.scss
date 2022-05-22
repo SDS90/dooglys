@@ -1,0 +1,79 @@
+//Просто (третий блок)
+
+.simple-wrapper{
+	width: 100%;
+	min-width: 1420px;
+	min-height: 955px;
+	background-color: transparent;
+	padding: 136px 10px 100px 10px;
+	overflow: hidden;
+
+	.simple-section{
+		width: 1030px;
+		margin: 0px auto;
+	}
+
+	.section-header{
+		font-size: 48px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin: 8px 0px 30px 0px;
+	}
+
+	.section-header-wrapper{
+		position: relative !important;
+	}
+
+	.textblock{
+		margin-bottom: 85px;
+	}
+
+	.notebook-block{
+		position: absolute !important;
+		left: 0px; top: 0px;
+		width: 766px;
+		height: 466px;
+		background-image: url(../img/simple/notebook.png);
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+
+	.notebook{
+		position: absolute;
+		left: -125px; top: 0px;
+		width: 1150px;
+		height: 466px;
+		padding: 7px 0px 0px 760px;
+
+		.textblock{
+			margin-bottom: 35px;
+		}
+	}
+
+	.printer{
+		position: absolute !important;
+		left: 690px; top: 310px;
+		z-index: 90;
+	}
+
+	.text-wrapper{
+		position: relative !important;
+	}
+
+	.video-block{
+		position: absolute;
+		top: 33px;
+		left: 155px;
+		width: 472px;
+		height: 297px;
+	}
+
+	.subheader{
+		position: relative !important;
+		font-size: 30px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 5px;
+	}
+
+}

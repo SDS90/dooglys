@@ -1,0 +1,22 @@
+//Все стили
+
+@import 'reset';
+@import 'base';
+
+@import 'plugins/jquery.scrollbar'; //Прокрутка
+@import 'plugins/fancybox'; //Фенсибокс
+@import 'plugins/fixed-positioning';
+
+@import 'all/first'; //Первый
+@import 'all/header'; //шапка
+@import 'all/business'; //Бизнес
+@import 'all/simple'; //Просто
+@import 'all/plans'; //Планы
+@import 'all/freeware'; //Бесплатно
+@import 'all/safety'; //Безопасно
+@import 'all/compatibility'; //Совместимо
+@import 'all/predictable'; //Предсказуемо
+@import 'all/reviews'; //Отзывы
+
+@import 'all/footer'; //Подвальчик
+

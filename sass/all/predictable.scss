@@ -1,0 +1,100 @@
+//Предсказуемо
+
+.predictable-wrapper{
+	width: 100%;
+	min-width: 1420px;
+	min-height: 1024px;
+	background-color: transparent;
+	padding: 142px 10px 100px 10px;
+	overflow: hidden;
+	position: relative;
+	//box-shadow: 0px 4px 4px #365387;
+
+	.predictable-section{
+		position: relative;
+		width: 900px;
+		margin: 0px auto;
+	}
+
+	.left-block{
+		width: 660px;
+		position: relative !important;
+		z-index: 10;
+	}
+
+	.subheader{
+		font-size: 30px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 5px;
+	}
+
+	.section-header{
+		font-size: 48px;
+		line-height: 52px;
+		color: #2e2e2e;
+		margin-bottom: 20px;
+	}
+
+	.textblock{
+
+		p{
+			margin-bottom: 24px;
+		}
+	}
+
+	.statistic-wrapper{
+		position: relative;
+		margin-top: 25px;
+
+		>img{
+			position: absolute !important;
+			top: -14px;
+		}
+
+		.compare{
+			position: absolute !important;
+			left: 104px;
+			top: 96px;
+			width: 819px;
+			height: 446px;
+			overflow: visible !important;
+		}
+
+		.changeable {
+		    border: none !important;
+		    position: relative;
+		    background-repeat: no-repeat;
+
+		    &:after {
+			    content: "";
+			    position: absolute;
+			    right: 0px;
+			    top: -16px;
+			    bottom: -16px;
+			    width: 2px;
+			    background-color: #2e2e2e;
+			    border-radius: 2px;
+			}
+		}
+
+		.handle {
+		    position: absolute;
+		    top: auto !important;
+		    bottom: 50%;
+		    width: 60px;
+		    height: 60px;
+		    border-radius: 50%;
+		    background-color: #2e2e2e;
+		    background-image: url(../img/icons/compare-arrows.png);
+		    background-repeat: no-repeat;
+		    background-position: center center;
+		    margin-left: -30px;
+		    margin-bottom: -30px;
+		    border-radius: 50%;
+		    text-align: center;
+		    z-index: 10;
+		    cursor: pointer;
+		}
+	}
+}
